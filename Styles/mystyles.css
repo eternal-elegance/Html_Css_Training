@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap");
 
 .background {
-  background: rgb(255,178,150);
-  background: linear-gradient(90deg, rgb(250, 143, 104) 3%, rgb(253, 190, 190) 100%);
+  background: rgb(255, 178, 150);
+  background: linear-gradient(
+    90deg,
+    rgb(250, 143, 104) 3%,
+    rgb(253, 190, 190) 100%
+  );
   position: absolute;
   min-height: 100%;
   min-width: 100%;
@@ -12,12 +16,17 @@
 }
 
 body {
-  color: #6b6b6b;
+  color: #424242;
+  font-family: "Nunito Sans", sans-serif;
 }
 
-.nav-bar{
-  background: rgb(255,128,69);
-background: linear-gradient(186deg, rgba(255,128,69,1) 3%, rgb(253, 224, 224) 100%);
+.nav-bar {
+  background: rgb(255, 128, 69);
+  background: linear-gradient(
+    186deg,
+    rgba(255, 128, 69, 1) 3%,
+    rgb(253, 224, 224) 100%
+  );
   padding: 10px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -28,4 +37,18 @@ background: linear-gradient(186deg, rgba(255,128,69,1) 3%, rgb(253, 224, 224) 10
   width: 100%;
 }
 
+.navbar-list li {
+  font-weight: 600;
+  padding: 10px;
+}
 
+.navbar-list li:hover {
+  background-color: rgb(255, 219, 203);
+  color: black;
+  transition: 0.2s all;
+  border-radius: 5px 20px;
+}
+
+footer div div div:hover {
+  color: rgb(255, 128, 69);
+}

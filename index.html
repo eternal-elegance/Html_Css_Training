@@ -8,6 +8,7 @@
   <title>Anurag's Portfolio</title>
   <link rel="stylesheet" type="text/css" href="./Styles/Styles.css">
   <link rel="stylesheet" type="text/css" href="./Styles/mystyles.css">
+  <script src="https://kit.fontawesome.com/cf7c5bbb42.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -20,14 +21,14 @@
     <div class="nav-bar">
 
       <nav>
-        <div class="inside-nav-bar flex flex-row flex-nowrap justify-evenly items-center">
+        <div class="inside-nav-bar flex flex-row flex-nowrap justify-between items-center">
           <!-- title text -->
-          <span class="text-3xl self-start" style="font-family: 'Oswald', sans-serif;">AB</span>
+          <span class="text-3xl" style="font-family: 'Oswald', sans-serif;">AB</span>
 
           <!-- navbar list items -->
-          <ul
-            class="navbar-list inline-block px-6 flex flex-row flex-nowrap justify-between items-center w-1/2 self-end">
-            <li class="navbar-item inline-block"><a href=""><span>Home</span></a></li>
+          <ul class="navbar-list inline-block px-6 flex flex-row flex-nowrap justify-between items-center">
+            <li class="navbar-item inline-block"><a href=""><span>Home</span></a>
+            </li>
             <li class="navbar-item inline-block"><a href=""><span>About</span></a></li>
             <li class="navbar-item inline-block"><a href=""><span>Projects</span></a></li>
             <li class="navbar-item inline-block"><a href=""><span>Achievements</span></a></li>
@@ -39,16 +40,59 @@
     </div>
     <!-- end of navbar -->
 
-
+    <div class="clear-both"></div>
 
     <!-- footer -->
-    <footer>
-      <div class="footer-bar">
+    <footer class="fixed bottom-0 left-0 z-10 w-full bg-black text-gray-300 py-7 bg-opacity-80 blur-lg">
+      <div class="footer-bar flex flex-row justify-around items-center">
+        <!-- This contains the copyright and developer information -->
+        <div class="footer-info border-r-2 border-gray-200 p-4">
 
+          <p>Designed by Anurag Banerjee</p>
+          <p><strong>&copy;copyright 2021</strong></p>
+
+        </div>
+        <div class="footer-links">
+
+          <h3 class="text-lg text-gray-100 underline"><strong>Social media</strong></h3>
+
+          <div class="twtr">
+            <span class="twtr-image"><i class="fa fa-twitter"></i></span>
+            <span class="twtr-text"><a href="">Twitter</a></span>
+          </div>
+
+          <div class="fb">
+            <span class="fb-logo"><i class="fa fa-facebook"></i></span>
+            <span class="fb-logo"><a href="">Facebook</a></span>
+          </div>
+
+          <div class="email">
+            <span class="email-logo"><i class="fa fa-at"></i></span>
+            <span class="email-text"><a
+                href="mailto:anurag.banerjee011@gmail.com">anurag.banerjee011@gmail.com</a></span>
+          </div>
+          <div class="insta">
+            <span class="insta-logo"><i class="fa fa-instagram"></i></span>
+            <span class="insta-text"><a href="">Instagram</a></span>
+          </div>
+
+          <div class="hackerrank">
+            <span class="hackerrank-logo"><i class="icon-foo" style="font-family: FontAwesome;">&#xf5f7;</i></span>
+            <span class="hackerrank-text"><a href="https://www.hackerrank.com/rick_warner007"
+                target="_blank">HackerRank</a></span>
+          </div>
+
+          <div class="github">
+            <span class="github-logo"><i class="fa fa-github"></i></span>
+            <span class="github-text"><a href="https://github.com/eternal-elegance" target="_blank">Github</a></span>
+          </div>
+        </div>
       </div>
     </footer>
   </div>
 </body>
 <script src="./Scripts/Script.js"></script>
+<script src="https://kit.fontawesome.com/cf7c5bbb42.js" crossorigin="anonymous"></script>
+
 
 </html>
