@@ -52,3 +52,8 @@ body {
 footer div div div:hover {
   color: rgb(255, 128, 69);
 }
+
+.hero-contriner {
+  display: flex;
+  flex-flow: row nowrap;
+}
