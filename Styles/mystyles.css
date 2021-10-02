@@ -2,6 +2,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
+/* background div styles */
 .background {
   /* background animation */
   background: linear-gradient(271deg, #f5f5f5, #fb8954);
@@ -41,13 +43,21 @@
   50%{background-position:100% 51%}
   100%{background-position:0% 50%}
 }
+/* background div styles ends */
 
+
+/* body styles */
 body {
   color: #cecece;
   font-family: "Nunito Sans", sans-serif;
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
+/* body style ends */
 
+
+/* navbar styles */
 .nav-bar {
   /* background: rgb(255, 128, 69);
   background: linear-gradient(
@@ -68,6 +78,24 @@ background-color: rgba(0, 0, 0, 0.549);
   width: 100%;
 }
 
+.navbar-list{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+/* li{
+  list-style-type: none;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+} */
+
 .clear{
   /* background-color: blue; */
   /* padding: 10px; */
@@ -86,13 +114,16 @@ background-color: rgba(0, 0, 0, 0.549);
   transition: 0.2s all;
   border-radius: 5px 20px;
 }
+/* navbar styles ends */
+
 
 .footer-bar{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.574);
+  align-content: space-around;
   height: 100%;
   padding: 4px;
 }
@@ -102,10 +133,6 @@ background-color: rgba(0, 0, 0, 0.549);
   color: rgb(255, 128, 69);
 }
 
-.hero-contriner {
-  display: flex;
-  flex-flow: row nowrap;
-}
 
 
 .footer-links{
@@ -113,7 +140,7 @@ background-color: rgba(0, 0, 0, 0.549);
   flex-flow: column nowrap;
   justify-content: center;
   align-items: stretch;
-  width: 25%;
+  /* width: 25%; */
   border-right: 2px solid rgba(229, 231, 235, 1);
   padding: 14px;
 }
@@ -124,7 +151,7 @@ background-color: rgba(0, 0, 0, 0.549);
   flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: center;
-  width: 50%;
+  /* width: 50%; */
 }
 
 .contact-form{
@@ -198,6 +225,7 @@ flex: 0 0 30%;
   height: 40%;
   border-radius: 50px;
   border: 2px solid black;
+  margin: auto;
 }
 
 .hero-text{
@@ -221,4 +249,29 @@ flex: 0 0 30%;
   color: #ffffff;
   font-weight: 600;
   text-shadow: 2px 0 0 coral, -2px 0 0 coral, 0 2px 0 coral, 0 -2px 0 coral, 1px 1px coral, -1px -1px 0 coral, 1px -1px 0 coral, -1px 1px 0 coral;
+}
+
+
+/* responsiveness */
+
+@media only screen and (max-width: 768px){
+.hero-text h2{
+  font-size: 2rem;
+}
+.hero-text p{
+  font-size: 0.8rem;
+}
+}
+
+@media only screen and(min-width: 769px) and (max-width: 1200){
+  .hero-text h2{
+    font-size: 3rem;
+  }
+  .hero-text p{
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1201px){
+
 }
