@@ -21,15 +21,17 @@
     <div class="nav-bar">
 
       <nav>
-        <div class="inside-nav-bar flex flex-row flex-nowrap justify-between items-center">
-          <!-- title text -->
-          <span class="text-3xl" style="font-family: 'Oswald', sans-serif;">AB</span>
 
+        <div class="ham" id="ham-menu" onclick="myFunc()">
+          <i class="fa fa-bars"></i>
+        </div>
+
+        <div class="" id="">
           <!-- navbar list items -->
-          <ul class="navbar-list inline-block px-6 flex flex-row flex-nowrap justify-between items-center">
+          <ul class="navbar-list" id="menu">
             <li class="navbar-item inline-block"><a href=""><span>Home</span></a>
             </li>
-            <li class="navbar-item inline-block"><a href="./Pages/Certifications.html"><span>Certifications</span></a>
+            <li class="navbar-item inline-block"><a href="#certification"><span>Certifications</span></a>
             </li>
             <li class="navbar-item inline-block"><a href="soon.html"><span>Projects</span></a></li>
             <li class="navbar-item inline-block"><a href="soon.html"><span>Achievements</span></a></li>
@@ -46,12 +48,60 @@
     <!-- end of navbar -->
     <div class="clear"></div>
 
+    <!-- main text -->
     <div class="hero-container">
       <div class="hero-text">
         <p>Anurag Banerjee</p>
         <h2>Software Developer</h2>
       </div>
       <div class="hero-image"><img src="./Images/my_img.jpeg" alt="my_image"></div>
+    </div>
+    <!-- main text end -->
+
+    <!-- certifications -->
+
+    <div class="certi" id="certification">
+      <div class="main-text">
+        <h2>Certifications</h2>
+      </div>
+
+      <div class="certi-content">
+        <!-- 1 -->
+          <figure class="card">
+            <img src="./Images/my_img.jpeg" alt="certificate1">
+            <figcaption>NPTEL- Developing Soft Skills and Personality</figcaption>
+          </figure>
+
+          <!-- 2 -->
+          <figure class="card">
+            <img src="./Images/my_img.jpeg" alt="certificate1">
+            <figcaption>NPTEL- Developing Soft Skills and Personality</figcaption>
+          </figure>
+
+          <!-- 3 -->
+          <figure class="card">
+            <img src="./Images/my_img.jpeg" alt="certificate1">
+            <figcaption>NPTEL- Developing Soft Skills and Personality</figcaption>
+          </figure>
+
+          <!-- 4 -->
+          <figure class="card">
+            <img src="./Images/my_img.jpeg" alt="certificate1">
+            <figcaption>NPTEL- Developing Soft Skills and Personality</figcaption>
+          </figure>
+
+          <!-- 5 -->
+          <figure class="card">
+            <img src="./Images/my_img.jpeg" alt="certificate1">
+            <figcaption>NPTEL- Developing Soft Skills and Personality</figcaption>
+          </figure>
+
+      </div>
+
+
+
+
+
     </div>
 
 
@@ -70,7 +120,7 @@
 
 
         <!-- This contains the copyright and developer information -->
-        <div class="footer-info border-r-2 border-gray-200 p-4">
+        <div class="footer-info">
           <p>Designed by Anurag Banerjee</p>
           <p><strong>&copy;copyright 2021</strong></p>
         </div>
@@ -130,6 +180,18 @@
 </body>
 <script src="./Scripts/Script.js"></script>
 <script src="https://kit.fontawesome.com/cf7c5bbb42.js" crossorigin="anonymous"></script>
+
+
+<script>
+function myFunc() {
+  var x = document.getElementById("menu");
+  if (x.className === "navbar-list") {
+    x.className = "hidden";
+  } else {
+    x.className = "navbar-list";
+  }
+}
+</script>
 
 
 </html>
